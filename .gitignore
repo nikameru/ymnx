@@ -1,3 +1,8 @@
+/.vscode
+/release
+/build
+*.lst
+
 # Prerequisites
 *.d
 
