@@ -63,14 +63,15 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lcurl -lnx -lz
+LIBS	:= -lcurl -lz -lAether -lnx `sdl2-config --libs` -lSDL2_ttf `freetype-config --libs`\
+           -lSDL2_gfx -lSDL2_image -lpng -ljpeg -lwebp
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
 LIBDIRS	:= $(PORTLIBS) $(LIBNX)
-
+LIBDIRS += libs/Aether
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional
