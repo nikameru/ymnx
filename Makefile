@@ -44,17 +44,17 @@ DATA		:=	data
 INCLUDES	:=	include
 #ROMFS	:=	romfs
 
-APP_TITLE	:=  ymnx
-APP_AUTHOR	:=  nikameru
-APP_VERSION	:=  0.0.1
-ICON	:=  icon.jpg
+APP_TITLE	:=	ymnx
+APP_AUTHOR	:=	nikameru
+APP_VERSION	:=	0.0.1
+ICON	:=	icon.jpg
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------
 ARCH	:=	-march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
 
 CFLAGS	:=	-g -Wall -O2 -ffunction-sections \
-			$(ARCH) $(DEFINES) `curl-config --cflags`
+			$(ARCH) $(DEFINES)
 
 CFLAGS	+=	$(INCLUDE) -D__SWITCH__
 
@@ -63,15 +63,15 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lcurl -lz -lAether -lnx `sdl2-config --libs` -lSDL2_ttf `freetype-config --libs`\
-           -lSDL2_gfx -lSDL2_image -lpng -ljpeg -lwebp
+LIBS	:= -lnx -lymapi `curl-config --libs`
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
 LIBDIRS	:= $(PORTLIBS) $(LIBNX)
-LIBDIRS += libs/Aether
+LIBDIRS += D:/ymnx/libs/ymapi
+
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional

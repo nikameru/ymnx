@@ -1,6 +1,3 @@
-[submodule "Aether"]
-	path = libs/Aether
-	url = https://github.com/tallbl0nde/Aether.git
-[submodule "libs/Aether"]
-	path = libs/libs/
-	url = https://github.com/tallbl0nde/Aether.git
+[submodule "ymapi"]
+	path = libs/ymapi
+	url = https://github.com/nikameru/ymapi.git
