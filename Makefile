@@ -70,7 +70,7 @@ LIBS	:= -lnx -lymapi `curl-config --libs`
 # include and lib
 #---------------------------------------------------------------------------------
 LIBDIRS	:= $(PORTLIBS) $(LIBNX)
-LIBDIRS += D:/ymnx/libs/ymapi
+LIBDIRS += D:/nx/ymnx/libs/ymapi
 
 
 #---------------------------------------------------------------------------------

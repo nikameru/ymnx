@@ -1,7 +1,10 @@
 /.vscode
 /release
 /build
+/libs/nlohmann
 *.lst
+*.json
+*.xml
 
 # Prerequisites
 *.d
