@@ -46,7 +46,7 @@ INCLUDES	:=	include
 
 APP_TITLE	:=	ymnx
 APP_AUTHOR	:=	nikameru
-APP_VERSION	:=	0.0.1
+APP_VERSION	:=	0.0.12
 ICON	:=	icon.jpg
 #---------------------------------------------------------------------------------
 # options for code generation
@@ -63,7 +63,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lnx -lymapi `curl-config --libs`
+LIBS	:= -lnx -lymapi -lmd5 `curl-config --libs`
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing

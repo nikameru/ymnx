@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     printf("curl_global_init\n");
     curl_global_init(CURL_GLOBAL_DEFAULT);
 
-    std::string downloadLink = getTrackDownloadLink(253451);
+    std::string downloadLink = getTrackDownloadLink(43207144);
 
     std::cout << downloadLink << ".\n";
     printf("\e[32mExit.\e[0m");
