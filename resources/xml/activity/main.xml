@@ -1,0 +1,24 @@
+<brls:AppletFrame
+    iconInterpolation="linear"
+    footerHidden="false">
+
+    <brls:Box
+        width="auto"
+        height="auto">
+
+        <brls:Header
+            id="version_label"
+            title="@i18n/main/title"
+            paddingTop="40"/>
+
+        <brls:Label
+            id="label_test"
+            width="auto"
+            height="auto"
+            fontSize="15"
+            text="test"
+            marginTop="8"/>
+
+    </brls:Box>
+    
+</brls:AppletFrame>

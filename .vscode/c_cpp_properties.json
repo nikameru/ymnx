@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "DKP aarch64",
+            "includePath": [
+                "${env:DEVKITPRO}/devkitA64/aarch64-none-elf/include/**",
+                "${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/13.1.0/include/**",
+                "${env:DEVKITPRO}/libnx/include/**",
+                "${env:DEVKITPRO}/portlibs/switch/include/**",
+                "${workspaceFolder}/libs/ymapi/include/**",
+                "${workspaceFolder}/libs/borealis/library/include/**",
+                "${workspaceFolder}/libs/borealis/library/lib/extern/yoga/src",
+                "${workspaceFolder}/libs/borealis/library/lib/extern/tweeny/include",
+                "${workspaceFolder}/libs/borealis/library/lib/extern/fmt/include",
+                "${workspaceFolder}/libs/borealis/library/include",
+                "${workspaceFolder}/libs/borealis/library/include/borealis/extern/nanovg-gl"
+            ],
+            "defines": [
+                "SWITCH",
+                "__SWITCH__",
+                "DEBUG"
+            ],
+            "compilerPath": "C:/devkitPro/devkitA64/bin/aarch64-none-elf-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

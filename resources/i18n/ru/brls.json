@@ -1,0 +1,21 @@
+{
+    "main": {
+        "title": "ymnx"
+    },
+
+    "hints": {
+        "ok": "OK",
+        "back": "Назад",
+        "exit": "Закрыть",
+        "on": "Вкл.",
+        "off": "Выкл."
+    },
+
+    "crash_frame": {
+        "button": "OK"
+    },
+
+    "thumbnail_sidebar": {
+        "save": "Save"
+    }
+}

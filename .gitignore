@@ -1,10 +1,17 @@
-/.vscode
+# Misc
 /release
 /build
-/libs/nlohmann
+
 *.lst
-*.json
-*.xml
+*.dksh
+
+switch_font.ttf
+switch_icons.ttf
+
+data.json
+oldmk
+exampleResponse.json
+exampleResponse.xml
 
 # Prerequisites
 *.d

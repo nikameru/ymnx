@@ -1,3 +1,6 @@
 [submodule "ymapi"]
 	path = libs/ymapi
 	url = https://github.com/nikameru/ymapi.git
+[submodule "borealis"]
+	path = libs/borealis
+	url = https://github.com/nikameru/borealis.git
